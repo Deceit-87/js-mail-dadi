@@ -26,24 +26,65 @@
 
             
 
-            let registerUsers= ['gianni.pinotto@gmail.com','evaquo.felice@libero.com','mario.rossi@alice.it','ciccio.panza@yahoo.it','manuelfreund@gmail.com'];
+        //     let registerUsers= ['gianni.pinotto@gmail.com','evaquo.felice@libero.com','mario.rossi@alice.it','ciccio.panza@yahoo.it','manuelfreund@gmail.com'];
 
-            const userMail = prompt('inserisci qui la tua mail');
+        //     const userMail = prompt('inserisci qui la tua mail');
 
-            console.log(registerUsers.indexOf(userMail));
+        //     console.log(registerUsers.indexOf(userMail));
 
-           if (registerUsers.indexOf(userMail) === -1) {
-                console.log(registerUsers.indexOf(userMail));
+        //    if (registerUsers.indexOf(userMail) === -1) {
+        //         console.log(registerUsers.indexOf(userMail));
 
-            alert('email inserita non registata, procedere alla registrazione ?');
-
-
-           }
-
-           else { 
-               alert('Bentornato! Ora puoi continuare la navigazione!')
-           }
+        //     alert('email inserita non registata, procedere alla registrazione ?');
 
 
+        //    }
+
+        //    else { 
+        //        alert('Bentornato! Ora puoi continuare la navigazione!')
+        //    }
 
 
+
+
+             //    ESERCIZIO 2
+
+
+
+
+    // generare un numero per l'utente
+
+    // esito
+    //   delay 
+    // generare un numero per il pc 
+    //  esito
+    // delay
+    // comparare i risultati 
+
+
+
+let diceRoll = [1,2,3,4,58,6];
+
+console.log(diceRoll.length);
+
+let playerRoll = parseInt(Math.random()*diceRoll.length)
+
+console.log (playerRoll)
+
+let pcRoll = parseInt(Math.random()*diceRoll.length)
+
+console.log (pcRoll)
+
+
+
+if (playerRoll > pcRoll) {
+    alert('You Win!!!')
+}
+
+else if (playerRoll < pcRoll){
+    alert('YOU LOSE!!!!')
+}
+
+else {
+    alert('ITS A DRAW')
+}
