@@ -22,17 +22,28 @@
                 //  ESERCIZIO 1
 
 
-           let userMail = prompt('inserisci qui la tua mail')
+             
 
-            console.log(userMail)
-
-            let registerUsers= ['gianni.pinotto@gmail.com','evaquo.felice@libero.com','mario.rossi@alice.it','ciccio.panza@yahoo.it']
             
-            console.log(registerUsers.length)
 
-            for (let i = 0; i < registerUsers.length; i++) {
-                const element = [i];
-                
-            }
+            let registerUsers= ['gianni.pinotto@gmail.com','evaquo.felice@libero.com','mario.rossi@alice.it','ciccio.panza@yahoo.it','manuelfreund@gmail.com'];
+
+            const userMail = prompt('inserisci qui la tua mail');
+
+            console.log(registerUsers.indexOf(userMail));
+
+           if (registerUsers.indexOf(userMail) === -1) {
+                console.log(registerUsers.indexOf(userMail));
+
+            alert('email inserita non registata, procedere alla registrazione ?');
+
+
+           }
+
+           else { 
+               alert('Bentornato! Ora puoi continuare la navigazione!')
+           }
+
+
 
 
