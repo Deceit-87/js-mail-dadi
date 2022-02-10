@@ -5,6 +5,8 @@
         display: flex;
         justify-content: center;
         background-color: rgb(16, 49, 121);
+        align-items: center;
+        height: 100vh;
     }
 
 
@@ -63,3 +65,4 @@
         transform: scale(1.1);
 
     }
+    
