@@ -1,5 +1,62 @@
-.container{
 
-  width: 70%;
-  background-image: url('./img/istockphoto-140020812-612x612.jpg');   
+    body{
+
+        color: white;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(16, 49, 121);
+    }
+
+
+.container{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        height: 500px;
+        background-image: url("./img/istockphoto-140020812-612x612.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 9999px;
+        box-shadow: 16px 7px 28px #1c0696;
+      
 }
+    .player-container{
+        height: 20px;
+        border: solid 2px rgba(150, 12, 12, 0.521);
+        min-width: 100px;
+        background-color: #5454c499;
+        border-radius: 40px;
+        margin: 5px;
+        padding: 10px;
+    }
+
+
+    #user-name{
+        margin:0;
+    }
+
+    #roll-dice{
+        height: auto;
+        text-align: center;
+        background-color: red;
+        border: dashed 3px white;
+        min-width: 100px;
+        border-radius: 40px;
+        margin: 0px;
+        padding: 0px 20p;
+    }
+
+    #roll-dice:hover{
+        transform: scale(1.1);
+        box-shadow: 1px 2px 5px white;
+    }
+
+    #roll-dice p {
+        font-size: 20px;
+        transform: scale(1.1);
+
+    }

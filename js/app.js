@@ -61,30 +61,46 @@
     // delay
     // comparare i risultati 
 
+        let playerName = prompt('Inserisci il tuo nome...');
+
+        console.log(playerName);
+
+        let nome = document.getElementById('user-name')
+
+        console.log(nome)
+       
+        nome.innerHTML = playerName
+
+        let diceRoll = [1,2,3,4,58,6];
+
+        console.log(diceRoll.length);
+       
+        let diceBtn = document.getElementById('roll-dice')
+        
+        
+
+        
+        
+
+        diceBtn.addEventListener("click",function(){
+
+        let playerRoll = parseInt(Math.random()*diceRoll.length)
+
+        let pcRoll = parseInt(Math.random()*diceRoll.length)
 
 
-let diceRoll = [1,2,3,4,58,6];
 
-console.log(diceRoll.length);
+        if (playerRoll > pcRoll) {
+            alert('You Win!!!')
+        }
 
-let playerRoll = parseInt(Math.random()*diceRoll.length)
+        else if (playerRoll < pcRoll){
+            alert('YOU LOSE!!!!')
+        }
 
-console.log (playerRoll)
+        else {
+            alert('ITS A DRAW')
+        }
 
-let pcRoll = parseInt(Math.random()*diceRoll.length)
-
-console.log (pcRoll)
-
-
-
-if (playerRoll > pcRoll) {
-    alert('You Win!!!')
-}
-
-else if (playerRoll < pcRoll){
-    alert('YOU LOSE!!!!')
-}
-
-else {
-    alert('ITS A DRAW')
-}
+    }
+    )
