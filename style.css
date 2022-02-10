@@ -25,6 +25,9 @@
       
 }
     .player-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         height: 20px;
         border: solid 2px rgba(150, 12, 12, 0.521);
         min-width: 100px;
@@ -41,7 +44,7 @@
 
     #roll-dice{
         height: auto;
-        text-align: center;
+      align-self: center;
         background-color: red;
         border: dashed 3px white;
         min-width: 100px;

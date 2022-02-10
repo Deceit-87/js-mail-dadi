@@ -76,10 +76,12 @@
         console.log(diceRoll.length);
        
         let diceBtn = document.getElementById('roll-dice')
-        
-        
+      
+         playerScore = 0;
+        pcScore = 0;
+        document.getElementById('player-score').innerHTML = playerScore
+        document.getElementById('pc-score').innerHTML =  pcScore
 
-        
         
 
         diceBtn.addEventListener("click",function(){
@@ -87,20 +89,43 @@
         let playerRoll = parseInt(Math.random()*diceRoll.length)
 
         let pcRoll = parseInt(Math.random()*diceRoll.length)
+        
 
-
-
+        
         if (playerRoll > pcRoll) {
-            alert('You Win!!!')
+            setTimeout(function(){ 
+            playerScore++
+           
+           
+
+            document.getElementById('player-score').innerHTML = playerScore;
+          
+   
+            
+            alert('You Win!!!')},1000)
         }
 
         else if (playerRoll < pcRoll){
-            alert('YOU LOSE!!!!')
+            setTimeout(function(){
+            pcScore++
+
+            document.getElementById('pc-score').innerHTML =  pcScore;
+
+
+            
+                alert('You Lose!!!')},1000)
         }
 
         else {
-            alert('ITS A DRAW')
+            setTimeout(function(){
+                alert('Its a Draw!!!')},1000)
         }
-
     }
     )
+
+   
+
+    
+    
+
+
